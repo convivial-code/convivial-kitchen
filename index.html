@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>convivial kitchen — Supper Club in Darmstadt</title>
+<meta name="description" content="convivial kitchen: Supper Club in Darmstadt. Eine lange Tafel, ein festes Menü, Plätze für Fremde.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23b4532a'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23f6f1e7' font-family='Georgia,serif'%3Ec%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://convivial.kitchen/">
+<style>
+  :root{
+    --paper:#f6f1e7; --ink:#1f1a14; --muted:#6b6257; --line:#d9cfbd;
+    --accent:#b4532a; --accent-ink:#8a3c1c;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:"Avenir Next","Segoe UI","Helvetica Neue",Arial,sans-serif;
+    --w:68rem;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:1.0625rem/1.6 var(--sans)}
+  a{color:var(--accent-ink);text-underline-offset:.18em}
+  a:hover{color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  .wrap{max-width:var(--w);margin:0 auto;padding:0 1.5rem}
+  header.top{display:flex;justify-content:space-between;align-items:baseline;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+  .mark{font:600 1.25rem/1 var(--serif);color:var(--ink);text-decoration:none}
+  .mark span{color:var(--accent)}
+  .lang button{font:inherit;font-size:.875rem;background:none;border:0;padding:.5rem .25rem;color:var(--muted);cursor:pointer;min-height:44px}
+  .lang button[aria-pressed=true]{color:var(--ink);text-decoration:underline;text-underline-offset:.3em}
+
+  .hero{padding:5rem 0 3.5rem;max-width:52rem}
+  .eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 1.25rem}
+  h1{font:400 clamp(2.8rem,7.5vw,6rem)/.98 var(--serif);letter-spacing:-.02em;margin:0}
+  h1 em{font-style:italic;color:var(--accent)}
+  .lede{font:400 clamp(1.25rem,2.2vw,1.6rem)/1.35 var(--serif);margin:1.75rem 0 0;max-width:34ch;text-wrap:pretty}
+
+  /* the evening, as a running order */
+  .evening{display:grid;grid-template-columns:1fr 2fr;gap:3rem;border-top:1px solid var(--ink);padding:3rem 0}
+  .evening h2{font:400 1.75rem/1.15 var(--serif);margin:0}
+  dl{margin:0;display:grid;grid-template-columns:7rem 1fr;gap:1.1rem 1.5rem}
+  dt{font:italic 400 1.15rem/1.4 var(--serif);color:var(--accent-ink)}
+  dd{margin:0;text-wrap:pretty}
+
+  .join{display:grid;grid-template-columns:1fr 2fr;gap:3rem;border-top:1px solid var(--line);padding:3rem 0 5rem}
+  .join h2{font:400 clamp(2rem,4vw,3rem)/1.05 var(--serif);margin:0}
+  .join p{margin:0;max-width:44ch}
+  .btn{display:inline-flex;align-items:center;min-height:48px;padding:0 1.4rem;margin-top:1.25rem;background:var(--ink);color:var(--paper);text-decoration:none;border-radius:2px;font-weight:600}
+  .btn:hover{background:var(--accent);color:var(--paper)}
+  .fine{font-size:.875rem;color:var(--muted);margin-top:1rem!important}
+
+  footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;font-size:.875rem;color:var(--muted);display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:space-between}
+  footer a{color:var(--muted)}
+  [data-lang=en] .de, [data-lang=de] .en{display:none}
+  @media (max-width:760px){
+    .hero{padding:3rem 0 2.5rem}
+    .evening,.join{grid-template-columns:1fr;gap:1.5rem}
+    dl{grid-template-columns:5.5rem 1fr}
+  }
+</style>
+</head>
+<body data-lang="de">
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="/">convivial <span>kitchen</span></a>
+    <div class="lang" role="group" aria-label="Sprache / Language">
+      <button type="button" data-set="de" aria-pressed="true">DE</button> ·
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Supper Club · Darmstadt</p>
+      <h1 class="de">Eine Tafel.<br><em>Fremde</em> Gäste.<br>Ein Menü.</h1>
+      <h1 class="en">One table.<br><em>Strangers.</em><br>One menu.</h1>
+      <p class="lede de">Du buchst einen Platz, nicht einen Tisch. Am Ende des Abends kennst du die Leute neben dir.</p>
+      <p class="lede en">You book a seat, not a table. By the end of the evening you know the people next to you.</p>
+    </section>
+
+    <section class="evening" aria-labelledby="e-h">
+      <h2 id="e-h"><span class="de">So läuft ein Abend</span><span class="en">How an evening goes</span></h2>
+      <dl>
+        <dt><span class="de">Ankommen</span><span class="en">Arrive</span></dt>
+        <dd><span class="de">Ein Glas zur Begrüßung, kurz vorstellen, Platz nehmen — wer neben wem sitzt, entscheidet die Tafel.</span><span class="en">A welcome drink, a quick hello, take a seat — the table decides who sits next to whom.</span></dd>
+        <dt><span class="de">Teilen</span><span class="en">Share</span></dt>
+        <dd><span class="de">Ein festes saisonales Menü, serviert auf großen Platten, die herumgereicht werden.</span><span class="en">One seasonal set menu, served on large platters passed around the table.</span></dd>
+        <dt><span class="de">Bleiben</span><span class="en">Stay</span></dt>
+        <dd><span class="de">Dessert, Gespräche, noch ein Glas. Niemand muss um 21 Uhr gehen.</span><span class="en">Dessert, conversation, one more drink. Nobody has to leave at nine.</span></dd>
+      </dl>
+    </section>
+
+    <section class="join" aria-labelledby="j-h">
+      <h2 id="j-h"><span class="de">Erster Abend bald.</span><span class="en">First evening soon.</span></h2>
+      <div>
+        <p class="de">Die Plätze sind begrenzt. Schreib uns, dann bekommst du die Termine zuerst — und sag uns gern, was du nicht essen kannst.</p>
+        <p class="en">Seats are limited. Write to us and you'll hear about dates first — and tell us anything you can't eat.</p>
+        <a class="btn" href="mailto:hello@convivial.social?subject=Supper%20Club%20%E2%80%94%20Warteliste">hello@convivial.social</a>
+        <p class="fine de">Teil von <a href="https://convivial.social/">convivial.social</a></p>
+        <p class="fine en">Part of <a href="https://convivial.social/">convivial.social</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>convivial kitchen · Darmstadt</span>
+    <span><a href="https://convivial.social/impressum.html">Impressum</a> · <a href="https://convivial.social/datenschutz.html"><span class="de">Datenschutz</span><span class="en">Privacy</span></a></span>
+  </footer>
+</div>
+<script>
+  (function(){
+    var b=document.body, btns=document.querySelectorAll('.lang button');
+    function set(l){b.dataset.lang=l;document.documentElement.lang=l;
+      btns.forEach(function(x){x.setAttribute('aria-pressed',x.dataset.set===l)});
+      try{localStorage.setItem('lang',l)}catch(e){}}
+    var saved=null; try{saved=localStorage.getItem('lang')}catch(e){}
+    set(saved || ((navigator.language||'de').slice(0,2)==='de'?'de':'en'));
+    btns.forEach(function(x){x.addEventListener('click',function(){set(x.dataset.set)})});
+  })();
+</script>
+</body>
+</html>
